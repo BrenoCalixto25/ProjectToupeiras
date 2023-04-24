@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.jardim {
+  max-width: 100%;
+  height: auto;
+  display: grid;
+  position: relative;
+}
+
+  .toupeira {
+    display: flex;
+    flex-direction: row;
+    background-image: url(./img/toupeira6.svg);
+    width: 223px;
+    height: 169px;
+    /* animation: toupeira;
+    animation-duration: 700ms; */
+  } 
+
+  .toupeira:hover {
+    animation: toupeira;
+    animation-duration: 700ms;
+  }
+  
+  .toupeiras {
+    display: grid;
+    position: absolute;
+    justify-content: center;
+    grid-template-areas: 
+    "A B C D"
+    "E F G H"
+    "I J K L";
+    margin-top: 200px;
+    margin-left: 100px;
+    gap: 80px;
+  }
+
+.toupeiras div:nth-child(1){
+    grid-area: A;
+}
+.toupeiras div:nth-child(2){
+    grid-area: B;
+}
+.toupeiras div:nth-child(3){
+    grid-area: C;
+}
+.toupeiras div:nth-child(4){
+    grid-area: D;
+}
+.toupeiras div:nth-child(5){
+    grid-area: E;
+}
+.toupeiras div:nth-child(6){
+    grid-area: F;
+}
+.toupeiras div:nth-child(7){
+  grid-area: G;
+}
+.toupeiras div:nth-child(8){
+  grid-area: H;
+}
+.toupeiras div:nth-child(9){
+  grid-area: I;
+}
+.toupeiras div:nth-child(10){
+  grid-area: J;
+}
+.toupeiras div:nth-child(11){
+  grid-area: K;
+}
+.toupeiras div:nth-child(12){
+  grid-area: L;
+}
+
+@keyframes toupeira {
+  0% {
+    background-image: url(img/toupeira1.svg);
+    transform: translateY(0);
+}
+  20% {
+    background-image: url(img/toupeira2.svg);
+    transform: translateY(0);
+}
+  40% { 
+    background-image: url(img/toupeira3.svg);
+    transform: translateY(0);
+}
+  60% {
+    background-image: url(img/toupeira4.svg);
+    transform: translateY(0);
+}
+  80% {
+    background-image: url(img/toupeira5.svg);
+    transform: translateY(0);
+    z-index: 1;
+}
+  100% {
+    background-image: url(img/toupeira6.svg);
+    transform: translateY(0);
+}
+}
